@@ -1,15 +1,15 @@
 package com.javatpoint.controller.covid19;
 
 public class StateData {
-    private int active ;
-    private int confirmed ;
-    private int deaths ;
-    private int deltaconfirmed ;
-    private int deltadeaths ;
-    private int deltarecovered ;
+    private String active ;
+    private String confirmed ;
+    private String deaths ;
+    private String deltaconfirmed ;
+    private String deltadeaths ;
+    private String deltarecovered ;
     private String lastupdatedtime ;
-    private int migratedother ;
-    private int recovered ;
+    private String migratedother ;
+    private String recovered ;
     private String state ;
     private String statecode ;
     private String statenotes ;
@@ -17,7 +17,7 @@ public class StateData {
     public StateData() {
     }
 
-    public StateData(int active, int confirmed, int deaths, int deltaconfirmed, int deltadeaths, int deltarecovered, String lastupdatedtime, int migratedother, int recovered, String state, String statecode, String statenotes) {
+    public StateData(String active, String confirmed, String deaths, String deltaconfirmed, String deltadeaths, String deltarecovered, String lastupdatedtime, String migratedother, String recovered, String state, String statecode, String statenotes) {
         this.active = active;
         this.confirmed = confirmed;
         this.deaths = deaths;
@@ -32,51 +32,51 @@ public class StateData {
         this.statenotes = statenotes;
     }
 
-    public int getActive() {
+    public String getActive() {
         return active;
     }
 
-    public void setActive(int active) {
+    public void setActive(String active) {
         this.active = active;
     }
 
-    public int getConfirmed() {
+    public String getConfirmed() {
         return confirmed;
     }
 
-    public void setConfirmed(int confirmed) {
+    public void setConfirmed(String confirmed) {
         this.confirmed = confirmed;
     }
 
-    public int getDeaths() {
+    public String getDeaths() {
         return deaths;
     }
 
-    public void setDeaths(int deaths) {
+    public void setDeaths(String deaths) {
         this.deaths = deaths;
     }
 
-    public int getDeltaconfirmed() {
+    public String getDeltaconfirmed() {
         return deltaconfirmed;
     }
 
-    public void setDeltaconfirmed(int deltaconfirmed) {
+    public void setDeltaconfirmed(String deltaconfirmed) {
         this.deltaconfirmed = deltaconfirmed;
     }
 
-    public int getDeltadeaths() {
+    public String getDeltadeaths() {
         return deltadeaths;
     }
 
-    public void setDeltadeaths(int deltadeaths) {
+    public void setDeltadeaths(String deltadeaths) {
         this.deltadeaths = deltadeaths;
     }
 
-    public int getDeltarecovered() {
+    public String getDeltarecovered() {
         return deltarecovered;
     }
 
-    public void setDeltarecovered(int deltarecovered) {
+    public void setDeltarecovered(String deltarecovered) {
         this.deltarecovered = deltarecovered;
     }
 
@@ -88,19 +88,19 @@ public class StateData {
         this.lastupdatedtime = lastupdatedtime;
     }
 
-    public int getMigratedother() {
+    public String getMigratedother() {
         return migratedother;
     }
 
-    public void setMigratedother(int migratedother) {
+    public void setMigratedother(String migratedother) {
         this.migratedother = migratedother;
     }
 
-    public int getRecovered() {
+    public String getRecovered() {
         return recovered;
     }
 
-    public void setRecovered(int recovered) {
+    public void setRecovered(String recovered) {
         this.recovered = recovered;
     }
 
@@ -131,15 +131,15 @@ public class StateData {
     @Override
     public String toString() {
         return "StateData{" +
-                "active=" + active +
-                ", confirmed=" + confirmed +
-                ", deaths=" + deaths +
-                ", deltaconfirmed=" + deltaconfirmed +
-                ", deltadeaths=" + deltadeaths +
-                ", deltarecovered=" + deltarecovered +
+                "active='" + active + '\'' +
+                ", confirmed='" + confirmed + '\'' +
+                ", deaths='" + deaths + '\'' +
+                ", deltaconfirmed='" + deltaconfirmed + '\'' +
+                ", deltadeaths='" + deltadeaths + '\'' +
+                ", deltarecovered='" + deltarecovered + '\'' +
                 ", lastupdatedtime='" + lastupdatedtime + '\'' +
-                ", migratedother=" + migratedother +
-                ", recovered=" + recovered +
+                ", migratedother='" + migratedother + '\'' +
+                ", recovered='" + recovered + '\'' +
                 ", state='" + state + '\'' +
                 ", statecode='" + statecode + '\'' +
                 ", statenotes='" + statenotes + '\'' +

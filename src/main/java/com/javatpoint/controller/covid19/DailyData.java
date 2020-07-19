@@ -2,18 +2,18 @@ package com.javatpoint.controller.covid19;
 
 public class DailyData {
 
-    private int dailyconfirmed ;
-    private int dailydeceased ;
-    private int dailyrecovered ;
+    private String dailyconfirmed ;
+    private String dailydeceased ;
+    private String dailyrecovered ;
     private String date ;
-    private int totalconfirmed;
-    private int totaldeceased ;
-    private int totalrecovered ;
+    private String totalconfirmed;
+    private String totaldeceased ;
+    private String totalrecovered ;
 
     public DailyData() {
     }
 
-    public DailyData(int dailyconfirmed, int dailydeceased, int dailyrecovered, String date, int totalconfirmed, int totaldeceased, int totalrecovered) {
+    public DailyData(String dailyconfirmed, String dailydeceased, String dailyrecovered, String date, String totalconfirmed, String totaldeceased, String totalrecovered) {
         this.dailyconfirmed = dailyconfirmed;
         this.dailydeceased = dailydeceased;
         this.dailyrecovered = dailyrecovered;
@@ -23,27 +23,27 @@ public class DailyData {
         this.totalrecovered = totalrecovered;
     }
 
-    public int getDailyconfirmed() {
+    public String getDailyconfirmed() {
         return dailyconfirmed;
     }
 
-    public void setDailyconfirmed(int dailyconfirmed) {
+    public void setDailyconfirmed(String dailyconfirmed) {
         this.dailyconfirmed = dailyconfirmed;
     }
 
-    public int getDailydeceased() {
+    public String getDailydeceased() {
         return dailydeceased;
     }
 
-    public void setDailydeceased(int dailydeceased) {
+    public void setDailydeceased(String dailydeceased) {
         this.dailydeceased = dailydeceased;
     }
 
-    public int getDailyrecovered() {
+    public String getDailyrecovered() {
         return dailyrecovered;
     }
 
-    public void setDailyrecovered(int dailyrecovered) {
+    public void setDailyrecovered(String dailyrecovered) {
         this.dailyrecovered = dailyrecovered;
     }
 
@@ -55,40 +55,40 @@ public class DailyData {
         this.date = date;
     }
 
-    public int getTotalconfirmed() {
+    public String getTotalconfirmed() {
         return totalconfirmed;
     }
 
-    public void setTotalconfirmed(int totalconfirmed) {
+    public void setTotalconfirmed(String totalconfirmed) {
         this.totalconfirmed = totalconfirmed;
     }
 
-    public int getTotaldeceased() {
+    public String getTotaldeceased() {
         return totaldeceased;
     }
 
-    public void setTotaldeceased(int totaldeceased) {
+    public void setTotaldeceased(String totaldeceased) {
         this.totaldeceased = totaldeceased;
     }
 
-    public int getTotalrecovered() {
+    public String getTotalrecovered() {
         return totalrecovered;
     }
 
-    public void setTotalrecovered(int totalrecovered) {
+    public void setTotalrecovered(String totalrecovered) {
         this.totalrecovered = totalrecovered;
     }
 
     @Override
     public String toString() {
         return "DailyData{" +
-                "dailyconfirmed=" + dailyconfirmed +
-                ", dailydeceased=" + dailydeceased +
-                ", dailyrecovered=" + dailyrecovered +
+                "dailyconfirmed='" + dailyconfirmed + '\'' +
+                ", dailydeceased='" + dailydeceased + '\'' +
+                ", dailyrecovered='" + dailyrecovered + '\'' +
                 ", date='" + date + '\'' +
-                ", totalconfirmed=" + totalconfirmed +
-                ", totaldeceased=" + totaldeceased +
-                ", totalrecovered=" + totalrecovered +
+                ", totalconfirmed='" + totalconfirmed + '\'' +
+                ", totaldeceased='" + totaldeceased + '\'' +
+                ", totalrecovered='" + totalrecovered + '\'' +
                 '}';
     }
 }

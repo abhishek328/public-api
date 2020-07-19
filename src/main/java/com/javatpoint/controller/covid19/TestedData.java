@@ -11,16 +11,16 @@ public class TestedData {
     private String testpositivityrate ;
     private String testsconductedbyprivatelabs ;
     private double testsperconfirmedcase ;
-    private int  testspermillion ;
-    private int totalindividualstested ;
-    private int totalpositivecases ;
-    private int totalsamplestested ;
+    private String   testspermillion ;
+    private String  totalindividualstested ;
+    private String totalpositivecases ;
+    private String  totalsamplestested ;
     private String updatetimestamp ;
 
     public TestedData() {
     }
 
-    public TestedData(double individualstestedperconfirmedcase, String positivecasesfromsamplesreported, String samplereportedtoday, String source, String source1, String testedasof, String testpositivityrate, String testsconductedbyprivatelabs, double testsperconfirmedcase, int testspermillion, int totalindividualstested, int totalpositivecases, int totalsamplestested, String updatetimestamp) {
+    public TestedData(double individualstestedperconfirmedcase, String positivecasesfromsamplesreported, String samplereportedtoday, String source, String source1, String testedasof, String testpositivityrate, String testsconductedbyprivatelabs, double testsperconfirmedcase, String testspermillion, String totalindividualstested, String totalpositivecases, String totalsamplestested, String updatetimestamp) {
         this.individualstestedperconfirmedcase = individualstestedperconfirmedcase;
         this.positivecasesfromsamplesreported = positivecasesfromsamplesreported;
         this.samplereportedtoday = samplereportedtoday;
@@ -109,35 +109,35 @@ public class TestedData {
         this.testsperconfirmedcase = testsperconfirmedcase;
     }
 
-    public int getTestspermillion() {
+    public String getTestspermillion() {
         return testspermillion;
     }
 
-    public void setTestspermillion(int testspermillion) {
+    public void setTestspermillion(String testspermillion) {
         this.testspermillion = testspermillion;
     }
 
-    public int getTotalindividualstested() {
+    public String getTotalindividualstested() {
         return totalindividualstested;
     }
 
-    public void setTotalindividualstested(int totalindividualstested) {
+    public void setTotalindividualstested(String totalindividualstested) {
         this.totalindividualstested = totalindividualstested;
     }
 
-    public int getTotalpositivecases() {
+    public String getTotalpositivecases() {
         return totalpositivecases;
     }
 
-    public void setTotalpositivecases(int totalpositivecases) {
+    public void setTotalpositivecases(String totalpositivecases) {
         this.totalpositivecases = totalpositivecases;
     }
 
-    public int getTotalsamplestested() {
+    public String getTotalsamplestested() {
         return totalsamplestested;
     }
 
-    public void setTotalsamplestested(int totalsamplestested) {
+    public void setTotalsamplestested(String totalsamplestested) {
         this.totalsamplestested = totalsamplestested;
     }
 
@@ -161,10 +161,10 @@ public class TestedData {
                 ", testpositivityrate='" + testpositivityrate + '\'' +
                 ", testsconductedbyprivatelabs='" + testsconductedbyprivatelabs + '\'' +
                 ", testsperconfirmedcase=" + testsperconfirmedcase +
-                ", testspermillion=" + testspermillion +
-                ", totalindividualstested=" + totalindividualstested +
-                ", totalpositivecases=" + totalpositivecases +
-                ", totalsamplestested=" + totalsamplestested +
+                ", testspermillion='" + testspermillion + '\'' +
+                ", totalindividualstested='" + totalindividualstested + '\'' +
+                ", totalpositivecases='" + totalpositivecases + '\'' +
+                ", totalsamplestested='" + totalsamplestested + '\'' +
                 ", updatetimestamp='" + updatetimestamp + '\'' +
                 '}';
     }

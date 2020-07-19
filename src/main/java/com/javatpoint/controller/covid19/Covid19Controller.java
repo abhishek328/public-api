@@ -14,7 +14,7 @@ public class Covid19Controller {
     @GetMapping("/datacovid19")
     public Covid19 getList()
     {
-        String url = "https://api.covid19india.org/data.json";
+        String url = "https://run.mocky.io/v3/74f3dc86-3d2f-4dec-811a-3d68ef7d5679";
         Covid19 object = restTemplate.getForObject(url,Covid19.class);
         //System.out.println(object);
         return object;
